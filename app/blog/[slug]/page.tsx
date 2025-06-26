@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   }
 
   return {
-    title: `${post.title} - Alex Johnson`,
+    title: `${post.title} - Shubham Kumar Bind`,
     description: post.excerpt,
     keywords: post.tags.join(", "),
   }
@@ -722,7 +722,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   <span className="text-white font-bold text-lg">A</span>
                 </div>
                 <div>
-                  <div className="font-semibold">Alex Johnson</div>
+                  <div className="font-semibold">Shubham Kumar Bind</div>
                   <div className="text-sm text-gray-600">Android Developer</div>
                 </div>
               </div>
@@ -756,9 +756,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   <span className="text-white font-bold text-xl">A</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Alex Johnson</h3>
+                  <h3 className="text-xl font-bold mb-2">Shubham Kumar Bind</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    I'm a passionate Android developer with 5+ years of experience building mobile apps that users love.
+                    I'm a passionate Android developer building mobile apps that users love.
                     When I'm not coding, you'll find me exploring new Android libraries, contributing to open source, or
                     sharing what I've learned with the developer community.
                   </p>
