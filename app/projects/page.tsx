@@ -16,6 +16,31 @@ export const metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
+  title: "CareCircle – Medication Accountability App",
+  year: "2025",
+  description:
+    "An Android app to ensure medication adherence with an accountability partner system. Sends real-time alerts to caregivers when doses are missed, improving patient safety and peace of mind.",
+  technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "API Gateway", "SNS"],
+  features: ["Medication Reminders", "Accountability Alerts", "Secure Auth", "Offline Notification Scheduling"],
+  githubUrl: "https://github.com/Versus04",
+  status: "In Progress",
+  icon: Health,
+  gradient: "from-blue-500 to-cyan-600",
+},
+{
+  title: "SplitShare – Advanced Group Expense Tracker",
+  year: "2025",
+  description:
+    "An expense splitting app with customizable splits, group management, real-time sync, and debt simplification using a graph-based algorithm. Ideal for roommates and travel groups.",
+  technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "AppSync", "S3"],
+  features: ["Group Expense Tracking", "Debt Simplification", "Custom Split Rules", "Real-Time Sync", "Receipt Uploads"],
+  githubUrl: "https://github.com/Versus04",
+  status: "In Progress",
+  icon: Wallet,
+  gradient: "from-purple-500 to-indigo-600",
+},
+
+    {
       title: "LunarLens",
       year: "2025",
       description:
