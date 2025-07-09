@@ -3,9 +3,8 @@ import { Footer } from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ExternalLink, Github, Telescope, Camera, MessageCircle, Music } from "lucide-react"
+import { ExternalLink, Github, Telescope, Camera, MessageCircle, Music,Health,Wallet } from "lucide-react"
 import Link from "next/link"
-import { Health } from "path-to-icons"
 export const metadata = {
   title: "Projects - Shubham Kumar Bind | Android App Portfolio",
   description:
