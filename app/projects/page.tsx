@@ -196,7 +196,7 @@ export default function ProjectsPage() {
                     </Link>
                   </Button>
                 </div>
-              </CanContent>
+              </CardContent>
             </Card>
           ))}
         </div>
