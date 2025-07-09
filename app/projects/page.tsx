@@ -3,8 +3,9 @@ import { Footer } from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ExternalLink, Github, Telescope, Camera, MessageCircle, Music,Health,Wallet } from "lucide-react"
+import { ExternalLink, Github, Telescope, Camera, MessageCircle, Music, Wallet, Heart } from "lucide-react"
 import Link from "next/link"
+
 export const metadata = {
   title: "Projects - Shubham Kumar Bind | Android App Portfolio",
   description:
@@ -15,37 +16,36 @@ export const metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
-  title: "CareCircle – Medication Accountability App",
-  year: "2025",
-  description:
-    "An Android app to ensure medication adherence with an accountability partner system. Sends real-time alerts to caregivers when doses are missed, improving patient safety and peace of mind.",
-  technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "API Gateway", "SNS"],
-  features: ["Medication Reminders", "Accountability Alerts", "Secure Auth", "Offline Notification Scheduling"],
-  githubUrl: "https://github.com/Versus04",
-  status: "In Progress",
-  icon: Health,
-  gradient: "from-blue-500 to-cyan-600",
-},
-{
-  title: "SplitShare – Advanced Group Expense Tracker",
-  year: "2025",
-  description:
-    "An expense splitting app with customizable splits, group management, real-time sync, and debt simplification using a graph-based algorithm. Ideal for roommates and travel groups.",
-  technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "AppSync", "S3"],
-  features: ["Group Expense Tracking", "Debt Simplification", "Custom Split Rules", "Real-Time Sync", "Receipt Uploads"],
-  githubUrl: "https://github.com/Versus04",
-  status: "In Progress",
-  icon: Wallet,
-  gradient: "from-purple-500 to-indigo-600",
-},
-
+      title: "CareCircle – Medication Accountability App",
+      year: "2025",
+      description:
+        "An Android app to ensure medication adherence with an accountability partner system. Sends real-time alerts to caregivers when doses are missed, improving patient safety and peace of mind.",
+      technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "API Gateway", "SNS"],
+      features: ["Medication Reminders", "Accountability Alerts", "Secure Auth", "Offline Notification Scheduling"],
+      githubUrl: "https://github.com/Versus04",
+      status: "In Progress",
+      icon: Heart,
+      gradient: "from-blue-500 to-cyan-600",
+    },
+    {
+      title: "SplitShare – Advanced Group Expense Tracker",
+      year: "2025",
+      description:
+        "An expense splitting app with customizable splits, group management, real-time sync, and debt simplification using a graph-based algorithm. Ideal for roommates and travel groups.",
+      technologies: ["Kotlin", "Jetpack Compose", "MVVM", "AWS Cognito", "DynamoDB", "Lambda", "AppSync", "S3"],
+      features: ["Group Expense Tracking", "Debt Simplification", "Custom Split Rules", "Real-Time Sync", "Receipt Uploads"],
+      githubUrl: "https://github.com/Versus04",
+      status: "In Progress",
+      icon: Wallet,
+      gradient: "from-purple-500 to-indigo-600",
+    },
     {
       title: "LunarLens",
       year: "2025",
       description:
         "An astronomy-focused Android app providing access to NASA's APIs like APOD, Mars Rover, and NASA Image Search. Built with MVVM, Kotlin Flows, and Coroutines using Jetpack Compose for an intuitive UI.",
       technologies: ["Kotlin", "Jetpack Compose", "MVVM", "Retrofit", "NASA API"],
-      features: ["NASA APOD Integration", "Mars Rover Photos", "Image Search", "Offline Caching"],
+      features: ["NASA APOD integration", "Mars Rover Photos", "Image Search", "Offline Caching"],
       githubUrl: "https://github.com/Versus04",
       status: "Live",
       icon: Telescope,
@@ -95,6 +95,8 @@ export default function ProjectsPage() {
         return "bg-green-100 text-green-800"
       case "In Development":
         return "bg-blue-100 text-blue-800"
+      case "In Progress":
+        return "bg-orange-100 text-orange-800"
       case "Coming Soon":
         return "bg-purple-100 text-purple-800"
       default:
@@ -194,7 +196,7 @@ export default function ProjectsPage() {
                     </Link>
                   </Button>
                 </div>
-              </CardContent>
+              </CanContent>
             </Card>
           ))}
         </div>
